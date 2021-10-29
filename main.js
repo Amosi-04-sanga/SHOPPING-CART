@@ -64,6 +64,7 @@ class PRODUCTS {
        const result = await response.json()
        return result
    }
+   // render products on page
    displayProducts(products) {
        products = products.map( product => {
            return `<!-- single product -->
