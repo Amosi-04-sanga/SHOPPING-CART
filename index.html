@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoping cart with vanilla javascript</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a8c767aa2c.js" crossorigin="anonymous"></script>
+    <!-- costom css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <!-- menu bar -->
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img src="./images/logo.svg" alt="logo">
+            <div class="cart-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar END-->
+    
+    <!-- hero -->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">furniture collection</h1>
+            <button class="banner-btn">shop now</button>
+        </div>
+    </header>
+    <!-- hero END-->
+    
+    <!-- products -->
+    <section class="products">
+        <div class="section-title">
+            <h2>our products</h2>
+        </div>
+        <div class="products-center">
+
+           
+
+        </div>
+    </section>
+    <!-- products END-->
+
+    <!-- cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+
+                 <!-- cart item -->
+                <img src=${item.image} alt="cart item">
+                <div>
+                    <h4>${item.title}</h4>
+                    <h5>$${item.price}</h5>
+                    <span class="remove-item" data-id=${item.id}>remove</span>
+                 </div>
+                 <div>
+                     <i class="fas fa-chevron-up" data-id=${item.id}></i>
+                     <p class="item-amount">${item.amount}</p>
+                     <i class="fas fa-chevron-down" data-id=${item.id}></i>
+                 </div>
+                 <!-- cart item END-->
+                
+            </div>
+            <div class="cart-footer">
+                <h3>your total: $<span class="cart-total">0.00</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- cart END-->
+   
+    <!-- contentfull js -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!-- app js -->
+    <script src="main.js" defer></script>
+    
+</body>
+</html>
