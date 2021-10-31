@@ -8,6 +8,7 @@
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
 }
+/* common css reset */
 * {
   margin: 0;
   padding: 0;
