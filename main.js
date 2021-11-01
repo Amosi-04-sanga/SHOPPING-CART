@@ -16,6 +16,7 @@ let buttonsDOM = []
 let cart = []
 
 // EVENT LISTNERS
+// before content loaded
 document.addEventListener( "DOMContentLoaded", initializeApp )
 
 
@@ -77,7 +78,7 @@ class UI {
 
               // add product to cart
               cart = [...cart,cartItem]
-
+        
               console.log(cart);
               // save cart in local storage
               STORAGE.saveCart()
